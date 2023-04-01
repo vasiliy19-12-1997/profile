@@ -1,4 +1,5 @@
 import "./profile.scss";
+import weather_main from "../Assets/Images/weather_main.png";
 const Profile = () => {
   return (
     <div>
@@ -38,11 +39,7 @@ const Profile = () => {
             </li>
             <li>
               <a href="#">
-                <img
-                  src="https://user-images.githubusercontent.com/102950888/226092855-2d251978-4da0-4770-8e72-9d88e0f0cd26.png"
-                  alt="Project 2"
-                  width={300}
-                />
+                <img src="weather_main" alt="Project 2" width={300} />
               </a>
               <h3>Weather</h3>
               <p>Weather</p>

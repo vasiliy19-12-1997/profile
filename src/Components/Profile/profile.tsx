@@ -1,5 +1,4 @@
 import "./profile.scss";
-import weather_main from "../Assets/Images/weather_main.png";
 const Profile = () => {
   return (
     <div>

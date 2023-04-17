@@ -1,11 +1,20 @@
-import { FC, useState } from "react";
+import { FC, useContext, useState } from "react";
 import "./navbar.scss";
+import { Link } from "react-router-dom";
+import MyButton from "../MyButton/myButton";
+import { AuthContext } from "../../../Context/context";
+import { IAuth } from "../../../Types/types";
 
 const Navbar: FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const { setIsAuth } = useContext(AuthContext) as IAuth;
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
+  };
+  const logOut = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setIsAuth(false);
+    localStorage.removeItem("authProfile");
   };
   return (
     <>
@@ -22,16 +31,19 @@ const Navbar: FC = () => {
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link to="#">Home</Link>
               </li>
               <li>
-                <a href="#">About</a>
+                <Link to="#">About</Link>
               </li>
               <li>
-                <a href="#">Projects</a>
+                <Link to="#">Projects</Link>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <Link to="#">Contact</Link>
+              </li>
+              <li>
+                <MyButton onClick={logOut}>log out</MyButton>
               </li>
             </ul>
           </nav>

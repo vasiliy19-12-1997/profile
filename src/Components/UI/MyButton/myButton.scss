@@ -1,0 +1,17 @@
+@import "../../../Styles/properties.scss";
+
+.MyButton {
+  display: grid;
+  grid-template-columns: auto;
+  @media (max-width: 570px) {
+    grid-template-columns: 250px;
+    justify-content: center;
+  }
+  &B {
+    @extend %button-template;
+  }
+  :hover {
+    transition: 0.3s ease;
+    background: var(#{--text-color-hover-default});
+  }
+}

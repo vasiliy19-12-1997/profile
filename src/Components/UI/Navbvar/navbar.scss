@@ -1,20 +1,13 @@
 .burger-menu-container {
   padding: 10px;
-  align-items: center;
   background-color: #333;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  .menu-items {
+  ul {
     display: flex;
-    justify-content: space-around;
-    & button {
-      background-color: #c5b9b9;
-      color: #fff;
-      padding: 0.5rem 0.8rem;
-      cursor: pointer;
-      border: none;
-      font-size: 1rem;
-    }
+    justify-content: space-between;
+  }
+  .menu-items {
     :hover {
       background: rgb(128, 135, 139);
     }

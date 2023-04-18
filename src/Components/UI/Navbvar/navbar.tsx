@@ -7,7 +7,7 @@ import "./navbar.scss";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { isAuth, setIsAuth } = useContext(AuthContext) as IAuth;
+  const { setIsAuth } = useContext(AuthContext) as IAuth;
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -15,7 +15,6 @@ const Navbar = () => {
     e.preventDefault();
     setIsAuth(false);
     localStorage.removeItem("authProfile");
-    console.log("рабоатет");
   };
   return (
     <>

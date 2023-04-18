@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./Components/UI/Navbvar/navbar";
-import Profile from "./Pages/Profile/profile";
+import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { AuthContext } from "./Context/context";
 import AppRouter from "./Components/AppRouter/appRouter";
+import { AuthContext } from "./Context/context";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -20,7 +18,6 @@ const App = () => {
         value={{ isAuth, setIsAuth, isLoading, setIsLoading }}
       >
         <BrowserRouter>
-          <Navbar />
           <AppRouter />
         </BrowserRouter>
       </AuthContext.Provider>

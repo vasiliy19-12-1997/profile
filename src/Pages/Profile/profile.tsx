@@ -1,5 +1,6 @@
+import { FC } from "react";
 import "./profile.scss";
-const Profile = () => {
+const Profile: FC = () => {
   return (
     <div>
       <header>

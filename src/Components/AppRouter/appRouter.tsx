@@ -11,7 +11,7 @@ const AppRouter: FC = () => {
       {privateRoutes.map((route) => (
         <Route element={<route.element />} path={route.path} key={route.path} />
       ))}
-      <Route path="/*" element={<Navigate to="/profile" replace />} />
+      <Route path="/*" element={<Navigate to="/Weather" replace />} />
     </Routes>
   ) : (
     <Routes>

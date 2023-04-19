@@ -43,3 +43,7 @@ body {
     font-size: 10px;
   }
 }
+.containter {
+  display: grid;
+  grid-template: 1fr/150px 800px 1fr;
+}

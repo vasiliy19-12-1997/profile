@@ -4,38 +4,37 @@
     justify-content: center;
   }
   .round {
+    position: relative;
     border-radius: 50%;
     width: 796.23px;
     height: 796.23px;
     left: 420px;
-    top: 300px;
     background: linear-gradient(93.75deg, #f7ce46 3.76%, #fbe27e 90.19%);
     margin-top: 123px;
   }
   img {
-    position: absolute;
     width: 800px;
     height: 972px;
     left: 582.37px;
   }
   .interface {
-    position: absolute;
+    position: relative;
     height: 32.49px;
-    left: 1321.34px;
-    top: 0px;
+    left: 1200px;
+    top: -800px;
     P {
       color: #757b93;
       font-size: 50px;
       line-height: 120px;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
   .text {
-    position: absolute;
+    position: relative;
     width: 634.48px;
     height: 295.8px;
-    left: 1250px;
-    top: 450px;
+    left: 1100px;
+    top: -600px;
     p {
       color: #1e1e1e;
       font-size: 120px;

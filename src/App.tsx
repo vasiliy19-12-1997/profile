@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./Components/AppRouter/appRouter";
 import { AuthContext } from "./Context/context";
+import Navbar from "./Components/UI/Navbvar/navbar";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -17,9 +18,12 @@ const App = () => {
       <AuthContext.Provider
         value={{ isAuth, setIsAuth, isLoading, setIsLoading }}
       >
-        <BrowserRouter>
-          <AppRouter />
-        </BrowserRouter>
+        <div className="containter">
+          <BrowserRouter>
+            <Navbar />
+            <AppRouter />
+          </BrowserRouter>
+        </div>
       </AuthContext.Provider>
     </>
   );

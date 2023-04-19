@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Context/context";
 import { IAuth } from "../../../Types/types";
-import MyButton from "../MyButton/myButton";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -43,7 +42,7 @@ const Navbar = () => {
                 <Link to={"/contact"}>Contact</Link>
               </li>
               <li>
-                <MyButton onClick={logOut}>log out</MyButton>
+                <button onClick={logOut}>Log out</button>
               </li>
             </ul>
           </nav>

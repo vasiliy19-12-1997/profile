@@ -19,6 +19,26 @@ $card-background-dark: #2e3035;
 
 $card-box-shadow-light: 0px 3px 20px rgba(147, 144, 144, 0.28);
 $card-box-shadow-dark: 0px 3px 20px rgba(5, 5, 5, 0.28);
+%nice-color {
+  text-transform: uppercase;
+  background: linear-gradient(
+    94.23deg,
+    #5374fa 12.41%,
+    #fd9179 52.55%,
+    #ff6969 89.95%
+  );
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+%main-text {
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
 %button-template {
   background-color: #4793ff;
   color: #fff;

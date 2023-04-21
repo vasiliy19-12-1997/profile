@@ -23,23 +23,23 @@
       height: 972px;
     }
     .interface {
-      position: absolute;
-      height: 32.49px;
-      left: 1400px;
-
+      position: relative;
+      height: 50px;
+      width: 500px;
+      top: -900px;
+      left: 700px;
       P {
         @extend %main-text;
-
         font-size: 3.5rem;
         @extend %nice-color;
       }
     }
     .text {
-      position: absolute;
-      width: 634.48px;
-      height: 295.8px;
-      left: 1300px;
-      top: 400px;
+      width: 650px;
+      height: 300px;
+      position: relative;
+      top: -580px;
+      left: 620px;
       p {
         color: #fff;
         font-size: 120px;
@@ -97,8 +97,8 @@
           justify-content: center;
           gap: 10px;
           img {
-            width: 400px;
-            height: 260px;
+            width: 600px;
+            height: 350px;
           }
         }
       }

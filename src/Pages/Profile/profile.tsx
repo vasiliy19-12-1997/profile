@@ -81,15 +81,11 @@ const Profile: FC = () => {
             </div>
             <div className={s.archiveImg}>
               <img
-                src="https://archiveprogram.github.com/assets/img/direction/box1-home.png"
+                src="https://user-images.githubusercontent.com/102950888/232326591-2e207e87-6830-4462-924d-d18840e47670.png"
                 alt="box"
               />
               <img
-                src="https://archiveprogram.github.com/assets/img/direction/box2-home.png"
-                alt="box"
-              />
-              <img
-                src="https://archiveprogram.github.com/assets/img/direction/box3-home.png"
+                src="https://user-images.githubusercontent.com/102950888/229137523-ab35f89a-63b5-47c1-ad22-c3cbc9ef4c38.png"
                 alt="box"
               />
             </div>

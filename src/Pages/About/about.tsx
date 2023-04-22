@@ -1,18 +1,19 @@
 import { FC } from "react";
-
+import s from "./about.module.scss";
+import Navbar from "../../Components/UI/Navbvar/navbar";
+import kmImage from "../../Components/Assets/Images/kmImage.png";
+import laptop from "../../Components/Assets/Images/laptop.png";
+import { Link } from "react-router-dom";
 type Props = {};
 
 const About: FC = (props: Props) => {
   return (
-    <>
-      <section className="intro">
+    <div className={s.about}>
+      <Navbar />
+      <div className={s.aboutD}>
+        {/* <section className="intro">
         <h2>About Me</h2>
-        <div className="image-container">
-          <img
-            src="https://altecsystems.ru/local/templates/altecsystems/images/about-history-2-large.webp"
-            alt="Vasiliy Konovalov"
-          />
-        </div>
+       
         <p>
           My name is Vasiliy Konovalov and I'm a frontend developer who loves
           active life and self-development. I've been coding for over 0.5 year
@@ -20,8 +21,8 @@ const About: FC = (props: Props) => {
           me playing footbal or tennis with my friends. Besides sports, I am
           also interested in investing and learning something new.
         </p>
-      </section>
-      <section>
+      </section> */}
+        {/* <section>
         <div className="profile-section">
           <h3 className="profile-section-title">Hard skills</h3>
           <ul className="profile-list">
@@ -48,8 +49,71 @@ const About: FC = (props: Props) => {
             </li>
           </ul>
         </div>
-      </section>
-    </>
+      </section> */}
+
+        <section className={s.section1}>
+          <div className={s.main}>
+            <h1>We Code We Deliver</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis sit tempora minima aut voluptatibus explicabo optio
+              recusandae non esse nesciunt consequatur porro, nihil, debitis
+              repudiandae dolores illum culpa hic ipsa!
+            </p>
+          </div>
+          <img src={kmImage} alt="Vasiliy Konovalov" />
+        </section>
+        <section className={s.section2}>
+          <div className={s.do}>
+            <div>
+              <img src={laptop} alt="laptop" />
+            </div>
+            <div className={s.doText}>
+              <h1>What we do</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis iure possimus hic animi distinctio porro dolorum soluta
+                in quae deserunt facere libero, consequuntur officia? Tempora
+                excepturi debitis nisi unde omnis?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis iure possimus hic animi distinctio porro dolorum soluta
+                in quae deserunt facere libero, consequuntur officia? Tempora
+                excepturi debitis nisi unde omnis?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis iure possimus hic animi distinctio porro dolorum soluta
+                in quae deserunt facere libero, consequuntur officia? Tempora
+                excepturi debitis nisi unde omnis?
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className={s.section3}>
+          <div>
+            <h1>Gym</h1>
+          </div>
+        </section>
+        <section className={s.footer}>
+          <ul>
+            <li>
+              <Link to={"/projects"}>Faq</Link>
+            </li>
+            <li>
+              <Link to={"/projects"}>Explore</Link>
+            </li>
+            <li>
+              <Link to={"/projects"}>Join GitHub</Link>
+            </li>
+            <li>
+              <Link to={"/projects"}>Become a Parner</Link>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
   );
 };
 

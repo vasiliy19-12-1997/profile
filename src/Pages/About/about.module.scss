@@ -1,0 +1,78 @@
+@import "../../Styles/properties.scss";
+.about {
+  display: grid;
+  grid-template: auto / 150px 1fr;
+  &D {
+    display: grid;
+    grid-template: 700px 500px 500px 200px / auto;
+    .section1 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 3.5rem;
+          @extend %nice-color;
+          width: 350px;
+        }
+        p {
+          @extend %main-text;
+          width: 600px;
+        }
+      }
+      img {
+        width: 1000px;
+        height: 600px;
+      }
+    }
+    .section2 {
+      background: #2f363d;
+      display: flex;
+      align-items: center;
+      .do {
+        display: flex;
+
+        gap: 20px;
+        justify-content: space-around;
+        img {
+          width: 500px;
+        }
+        &Text {
+          h1 {
+            @extend %nice-color;
+            font-size: 2.5rem;
+          }
+          p {
+            @extend %main-text;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .section3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer {
+      background: #2f363d;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

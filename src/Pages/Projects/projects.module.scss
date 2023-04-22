@@ -1,0 +1,14 @@
+.projects {
+  display: grid;
+  grid-template: auto / 150px 1fr;
+  &D {
+    display: grid;
+    grid-template: 700px 700px 700px 1fr 1fr 200px / auto;
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

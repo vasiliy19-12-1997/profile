@@ -1,15 +1,15 @@
 import { FC } from "react";
-import s from "./about.module.scss";
-import Navbar from "../../Components/UI/Navbvar/navbar";
-import kmImage from "../../Components/Assets/Images/kmImage.png";
+import balokovo from "../../Components/Assets/Images/Km/balokovo.png";
 import nornikel from "../../Components/Assets/Images/Km/nornikel.png";
 import tekla from "../../Components/Assets/Images/Km/tekla.png";
 import vmz from "../../Components/Assets/Images/Km/vmz.png";
-import balokovo from "../../Components/Assets/Images/Km/balokovo.png";
-import laptop from "../../Components/Assets/Images/laptop.png";
 import gym from "../../Components/Assets/Images/gym.png";
+import kmImage from "../../Components/Assets/Images/kmImage.png";
+import laptop from "../../Components/Assets/Images/laptop.png";
+import Navbar from "../../Components/UI/Navbvar/navbar";
+import s from "./about.module.scss";
 
-import { Link } from "react-router-dom";
+import Footer from "../../Components/UI/Footer/footer";
 type Props = {};
 
 const About: FC = (props: Props) => {
@@ -112,38 +112,7 @@ const About: FC = (props: Props) => {
             <h1>Footbal</h1>
           </div>
         </section>
-
-        <section className={s.footer}>
-          <div className={s.footerInnerWrap}>
-            <nav>
-              <ul>
-                <li>
-                  <Link to={"/projects"}>Faq</Link>
-                </li>
-                <li>
-                  <Link to={"/projects"}>Explore</Link>
-                </li>
-                <li>
-                  <Link to={"/projects"}>Join GitHub</Link>
-                </li>
-                <li>
-                  <Link to={"/projects"}>Become a Parner</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className={s.footerSocial}>
-            <a href="#" target="_blank">
-              <i>tg</i>
-            </a>
-            <a href="#" target="_blank">
-              <i>vk</i>
-            </a>
-            <a href="#" target="_blank">
-              <i>you</i>
-            </a>
-          </div>
-        </section>
+        <Footer />
       </div>
     </div>
   );

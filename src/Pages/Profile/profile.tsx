@@ -1,9 +1,9 @@
 import { FC } from "react";
-import s from "./profile.module.scss";
 import profile from "../../Components/Assets/Images/profile-photo.png";
-import Navbar from "../../Components/UI/Navbvar/navbar";
+import Footer from "../../Components/UI/Footer/footer";
 import MyButton from "../../Components/UI/MyButton/myButton";
-import { Link } from "react-router-dom";
+import Navbar from "../../Components/UI/Navbvar/navbar";
+import s from "./profile.module.scss";
 const Profile: FC = () => {
   return (
     <div className={s.profile}>
@@ -106,22 +106,7 @@ const Profile: FC = () => {
             </p>
           </div>
         </section>
-        <section className={s.footer}>
-          <ul>
-            <li>
-              <Link to={"/projects"}>Faq</Link>
-            </li>
-            <li>
-              <Link to={"/projects"}>Explore</Link>
-            </li>
-            <li>
-              <Link to={"/projects"}>Join GitHub</Link>
-            </li>
-            <li>
-              <Link to={"/projects"}>Become a Parner</Link>
-            </li>
-          </ul>
-        </section>
+        <Footer />
       </main>
     </div>
   );

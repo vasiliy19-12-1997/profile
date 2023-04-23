@@ -1,14 +1,79 @@
+@import "../../Styles/properties.scss";
+
 .projects {
   display: grid;
   grid-template: auto / 150px 1fr;
   &D {
     display: grid;
-    grid-template: 700px 700px 700px 1fr 1fr 200px / auto;
+    grid-template: 1000px 1fr 1fr 200px / auto;
     .section1 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      h1 {
+        @extend %nice-color;
+        font-size: 3.5rem;
+      }
+      h2 {
+        @extend %nice-color;
+        font-size: 2.5rem;
+      }
+      &D {
+        display: grid;
+        gap: 20px;
+        grid-template: 1fr / 150px 1fr 1fr 150px;
+        &Img {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          img {
+            border-radius: 20px;
+          }
+        }
+        &Text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          a {
+            text-decoration: none;
+          }
+          p {
+            @extend %main-text;
+          }
+        }
+      }
+    }
+  }
+  .section2 {
+    background: #2f363d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      @extend %nice-color;
+      font-size: 2.5rem;
+    }
+    &D {
+      display: grid;
+      grid-template: 1fr / 150px 1fr 150px;
+      &Img {
+        display: grid;
+        grid-template: 1fr 1fr /1fr;
+        gap: 20px;
+        img {
+          border-radius: 20px;
+        }
+        p {
+          color: #fff;
+          @extend %main-text;
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          @extend %main-text;
+        }
+      }
     }
   }
 }

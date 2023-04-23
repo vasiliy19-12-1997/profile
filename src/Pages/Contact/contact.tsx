@@ -1,11 +1,11 @@
 import React from "react";
+import Footer from "../../Components/UI/Footer/footer";
 
 type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <>
-      {" "}
+    <div>
       <section>
         <h2>Contact me:</h2>
         <a href="https://t.me/kebab_case" className="profile-list-item">
@@ -17,7 +17,8 @@ const Contact = (props: Props) => {
           />
         </a>
       </section>
-    </>
+      <Footer />
+    </div>
   );
 };
 

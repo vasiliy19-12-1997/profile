@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import s from "./projects.module.scss";
-import Navbar from "../../Components/UI/Navbvar/navbar";
 import Footer from "../../Components/UI/Footer/footer";
+import Navbar from "../../Components/UI/Navbvar/navbar";
+import s from "./projects.module.scss";
+
 type Props = {};
 
 const Projects = (props: Props) => {

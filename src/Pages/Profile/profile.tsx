@@ -1,9 +1,10 @@
 import { FC } from "react";
-import profile from "../../Components/Assets/Images/profile-photo.png";
+import profile from "../../Assets/Images/profile-photo.png";
+
+import s from "./profile.module.scss";
 import Footer from "../../Components/UI/Footer/footer";
 import MyButton from "../../Components/UI/MyButton/myButton";
 import Navbar from "../../Components/UI/Navbvar/navbar";
-import s from "./profile.module.scss";
 const Profile: FC = () => {
   return (
     <div className={s.profile}>

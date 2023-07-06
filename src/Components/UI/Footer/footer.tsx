@@ -1,6 +1,5 @@
-import React from "react";
-import s from "./footer.module.scss";
 import { Link } from "react-router-dom";
+import s from "./footer.module.scss";
 type Props = {};
 
 const Footer = (props: Props) => {

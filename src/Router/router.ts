@@ -1,8 +1,8 @@
-import About from "../../Pages/About/about";
-import Contact from "../../Pages/Contact/contact";
-import Profile from "../../Pages/Profile/profile";
-import Projects from "../../Pages/Projects/projects";
-import Shop from "../../Pages/Shop/shop";
+import About from "../Pages/About/about";
+import Contact from "../Pages/Contact/contact";
+import Profile from "../Pages/Profile/profile";
+import Projects from "../Pages/Projects/projects";
+import Shop from "../Pages/Shop/shop";
 
 export const privateRoutes = [
   { path: "/profile", element: Profile },

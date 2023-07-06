@@ -1,15 +1,14 @@
 import { FC } from "react";
-import balokovo from "../../Components/Assets/Images/Km/balokovo.png";
-import nornikel from "../../Components/Assets/Images/Km/nornikel.png";
-import tekla from "../../Components/Assets/Images/Km/tekla.png";
-import vmz from "../../Components/Assets/Images/Km/vmz.png";
-import gym from "../../Components/Assets/Images/gym.png";
-import kmImage from "../../Components/Assets/Images/kmImage.png";
-import laptop from "../../Components/Assets/Images/laptop.png";
+import Footer from "../../Components/UI/Footer/footer";
 import Navbar from "../../Components/UI/Navbvar/navbar";
 import s from "./about.module.scss";
-
-import Footer from "../../Components/UI/Footer/footer";
+import kmImage from "../../Assets/Images/kmImage.png";
+import laptop from "../../Assets/Images/laptop.png";
+import gym from "../../Assets/Images/gym.png";
+import nornikel from "../../Assets/Images/Km/nornikel.png";
+import balokovo from "../../Assets/Images/Km/balokovo.png";
+import tekla from "../../Assets/Images/Km/tekla.png";
+import vmz from "../../Assets/Images/Km/vmz.png";
 type Props = {};
 
 const About: FC = (props: Props) => {

@@ -1,7 +1,5 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../../Context/context";
-import { IAuth } from "../../../Types/types";
 import "./navbar.scss";
 
 const Navbar = () => {
